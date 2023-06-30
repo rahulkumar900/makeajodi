@@ -1,0 +1,17 @@
+.home-container{
+    height: auto;
+    width: 100%;
+    background-image: url("/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:  center;
+
+
+}
+
+.h-f{
+    height: calc(100vh - 72px);
+}
+
+
+
