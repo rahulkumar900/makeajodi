@@ -13,9 +13,9 @@ function navbar() {
             <li className="px-3 py-2">About</li>
             <li className="px-3 py-2">Plans</li>
             <li className="px-3 py-2">Contact Us</li>
-            <li className="px-3 py-2">
+            {/* <li className="px-3 py-2">
               <DropList />
-            </li>
+            </li> */}
           </ul>
           <div className="flex items-center  gap-4">
             <div className="px-3 py-2">

@@ -2,6 +2,15 @@ import "./home.css";
 import Container from "../components/container-block/container-section";
 import SwiperCard from "../components/ui/swiperCard";
 import { RxCheckCircled, RxCrossCircled } from "react-icons/rx";
+const profileFor = [
+  "MySelf",
+  "Brother",
+  "Sister",
+  "Daoghter",
+  "Son",
+  "Relative",
+  "Friend",
+];
 export default function home() {
   return (
     <>
@@ -21,8 +30,18 @@ export default function home() {
                   id="selectFor"
                   className="w-full block   text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 >
-                  <option className="py-3 px-4" value="">
-                    Self
+                  {profileFor
+                    ? profileFor.map((ele, i) => {
+                        return (
+                          <option key={i} className="py-3 px-4" value={ele}>
+                           {ele}
+                          </option>
+                        );
+                      })
+                    : "Null"}
+
+                  {/* <option className="py-3 px-4" value="">
+                    Brother
                   </option>
                   <option className="py-3 px-4" value="">
                     Self
@@ -38,10 +57,7 @@ export default function home() {
                   </option>
                   <option className="py-3 px-4" value="">
                     Self
-                  </option>
-                  <option className="py-3 px-4" value="">
-                    Self
-                  </option>
+                  </option> */}
                 </select>
               </div>
               <div className="w-full  px-3 mb-6 md:mb-0">
@@ -97,24 +113,7 @@ export default function home() {
               </div>
 
               <div className="w-full  px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="password"
-                >
-                  Password
-                </label>
-                <input
-                  className="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="password"
-                  type="text"
-                  placeholder="**********"
-                />
-                <p className="hidden text-xs italic">
-                  Please fill out this field.
-                </p>
-              </div>
-              <div className="w-full  px-3 mb-6 md:mb-0">
-                <button className="py-3 px-4 rounded-md font-semibold text-gray-300 bg-green-700 w-full  bg-green ">
+                <button className="py-3 px-4 rounded-md font-semibold text-gray-100 bg-rose-700 w-full  bg-green ">
                   Register Free
                 </button>
               </div>
@@ -122,7 +121,7 @@ export default function home() {
           </div>
         </div>
       </div>
-      <Container >
+      <Container>
         <h2 className="text-center text-3xl md:text-4xl font-bold tracking-tight">
           Find Your Special One
         </h2>
@@ -173,10 +172,10 @@ export default function home() {
           </div>
         </div>
       </Container>
-      <Container >
+      <Container>
         <div className=" max-w-7xl mx-auto px-2 md:px-8  py-2 ">
           <h2 className="font-bold text-3xl  md:text-4xl">
-            Matrimony series of thousand of success stories
+             Success Stories of MakeaJodi
           </h2>
           <div className=" w-full mt-12 ">
             <SwiperCard />
@@ -184,19 +183,25 @@ export default function home() {
         </div>
       </Container>
       <Container className=" bg-[url(/rose.jpg)] bg-no-repeat bg-cover  story  text-white relative ">
-     
-      <div className=" max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
-        <h4 className="text-3xl md:text-4xl font-serif font-semibold">
-          Your Story is waiting to happen
-        </h4>
-        <button type="button" className=" font-serif hover:bg-rose-600 border px-6 py-2">Get Started</button>
+        <div className=" max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
+          <h4 className="text-3xl md:text-4xl font-serif font-semibold">
+            Your Story is waiting to happen
+          </h4>
+          <button
+            type="button"
+            className=" font-serif bg-rose-800 border-2 rounded-lg px-6 py-2"
+          >
+            Get Started
+          </button>
         </div>
       </Container>
 
       <Container>
         <div className=" max-w-7xl px-2 md:px-8  py-2 ">
           <div className="md:max-w-4xl mx-auto text-left md:text-center">
-            <p className=" sm:hidden leading-tright text-sm text-gray-600 font-semibold  ">UPGRADE YOUR MEMBERSHIP PLAN</p>
+            <p className=" sm:hidden leading-tright text-sm text-gray-600 font-semibold  ">
+              UPGRADE YOUR MEMBERSHIP PLAN
+            </p>
             <h4 className=" -mt-1  md:mt-0 text-left md:text-center leading-snug text-3xl  md:text-4xl font-bold tracking-tight">
               Membership Plans
             </h4>
@@ -209,7 +214,7 @@ export default function home() {
           <div className="mt-12">
             <div className="flex gap-8 md:gap-0 flex-col md:flex-row w-full justify-center items-center ">
               <div className="w-full membership-card-free border h-min p-6 space-y-6 max-w-none md:max-w-sm">
-              <div className="space-y-2">
+                <div className="space-y-2">
                   <div className="w-10 h-1 bg-green-500"></div>
                   <div className="text-3xl  font-bold">Free</div>
                 </div>
@@ -322,7 +327,9 @@ export default function home() {
               <div className="w-full membership-card-Premium h-min bg-orange-600 border p-6 space-y-6 max-w-none md:max-w-sm">
                 <div className="space-y-2">
                   <div className="w-10 h-1 bg-gray-200"></div>
-                  <div className="text-3xl text-gray-100 font-bold">Premium</div>
+                  <div className="text-3xl text-gray-100 font-bold">
+                    Premium
+                  </div>
                 </div>
 
                 <ul className="flex flex-col gap-6">
@@ -385,7 +392,6 @@ export default function home() {
                   Register Free
                 </button>
               </div>
-
             </div>
           </div>
         </div>
