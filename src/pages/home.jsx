@@ -2,6 +2,15 @@ import "./home.css";
 import Container from "../components/container-block/container-section";
 import SwiperCard from "../components/ui/swiperCard";
 import { RxCheckCircled, RxCrossCircled } from "react-icons/rx";
+const profileFor = [
+  "MySelf",
+  "Brother",
+  "Sister",
+  "Daoghter",
+  "Son",
+  "Relative",
+  "Friend",
+];
 export default function home() {
   return (
     <>
@@ -21,8 +30,18 @@ export default function home() {
                   id="selectFor"
                   className="w-full block   text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 >
-                  <option className="py-3 px-4" value="">
-                    Self
+                  {profileFor
+                    ? profileFor.map((ele, i) => {
+                        return (
+                          <option key={i} className="py-3 px-4" value={ele}>
+                            {ele}
+                          </option>
+                        );
+                      })
+                    : "Null"}
+
+                  {/* <option className="py-3 px-4" value="">
+                    Brother
                   </option>
                   <option className="py-3 px-4" value="">
                     Self
@@ -38,10 +57,7 @@ export default function home() {
                   </option>
                   <option className="py-3 px-4" value="">
                     Self
-                  </option>
-                  <option className="py-3 px-4" value="">
-                    Self
-                  </option>
+                  </option> */}
                 </select>
               </div>
               <div className="w-full  px-3 mb-6 md:mb-0">
@@ -97,24 +113,7 @@ export default function home() {
               </div>
 
               <div className="w-full  px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="password"
-                >
-                  Password
-                </label>
-                <input
-                  className="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="password"
-                  type="text"
-                  placeholder="**********"
-                />
-                <p className="hidden text-xs italic">
-                  Please fill out this field.
-                </p>
-              </div>
-              <div className="w-full  px-3 mb-6 md:mb-0">
-                <button className="py-3 px-4 rounded-md font-semibold text-gray-300 bg-green-700 w-full  bg-green ">
+                <button className="py-3 px-4 rounded-md font-semibold text-gray-100 bg-rose-700 w-full  bg-green ">
                   Register Free
                 </button>
               </div>
@@ -176,7 +175,7 @@ export default function home() {
       <Container>
         <div className=" max-w-7xl mx-auto px-2 md:px-8  py-2 ">
           <h2 className="font-bold text-3xl  md:text-4xl">
-            Matrimony series of thousand of success stories
+            Success Stories of MakeaJodi
           </h2>
           <div className=" w-full mt-12 ">
             <SwiperCard />
@@ -184,8 +183,8 @@ export default function home() {
         </div>
       </Container>
       <Container className=" bg-[url(/rose.jpg)] bg-no-repeat bg-cover  story  text-white relative ">
-        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
-          <h4 className="text-3xl  md:text-4xl font-serif font-semibold">
+        <div className=" max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
+          <h4 className="text-3xl md:text-4xl font-serif font-semibold">
             Your Story is waiting to happen
           </h4>
           <button
