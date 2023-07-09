@@ -1,4 +1,3 @@
-
 import Card from "../molecules/card";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,39 +49,33 @@ import { Navigation } from "swiper";
 
 export default function CardSwiper() {
   return (
-    <>
-      <Swiper
-    
-        slidesPerView={1}
-        breakpoints={{
-          640: { slidesPerView: 2, spaceBetween: 20 },
+    <Swiper
+      slidesPerView={1}
+      breakpoints={{
+        640: { slidesPerView: 2, spaceBetween: 20 },
 
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        }}
-        centeredSlidesBounds = {true}
-        centeredSlides = {true}
-        spaceBetween={30}
-        navigation={true}
-        loop={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-
-{
-  successStories ? successStories.map((story,i)=>{
-    return (
-      <SwiperSlide className="rounded-lg  shadow-md" key={i}>
-        <Card  {...story} />
-        </SwiperSlide>
-    )
-  }): "No Story"
-}
-
-      
-      </Swiper>
-    </>
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      }}
+      centeredSlidesBounds={true}
+      centeredSlides={true}
+      spaceBetween={30}
+      navigation={true}
+      loop={true}
+      modules={[Navigation]}
+      className="mySwiper mx-auto"
+    >
+      {successStories
+        ? successStories.map((story, i) => {
+            return (
+              <SwiperSlide className="rounded-lg  shadow-md" key={i}>
+                <Card {...story} />
+              </SwiperSlide>
+            );
+          })
+        : "No Story"}
+    </Swiper>
   );
 }
