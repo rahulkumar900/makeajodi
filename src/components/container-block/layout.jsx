@@ -1,5 +1,6 @@
 import Navbar from "../ui/navbar";
 import Footer from "../ui/footer";
+import SocialFooter from "../ui/socialFooter";
 import { Outlet } from "react-router-dom";
 
 export default function layout() {
@@ -10,6 +11,7 @@ export default function layout() {
         <Outlet />
       </div>
       <Footer />
+      <SocialFooter />
     </div>
   );
 }

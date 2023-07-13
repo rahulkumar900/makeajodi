@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const successStories = [
   {
     firstName: "Gyanendra",
-    lastName: "Kumar",
+    lastName: "Arabian",
     img: "/banner1.jpeg",
     story:
       "Include popular icons in your React projects easily with react-icons which utilizes ES6 imports that allows you to include only the icons that your project is using.",
@@ -20,14 +20,14 @@ const successStories = [
   },
   {
     firstName: "Gyanendra",
-    lastName: "Kumar",
+    lastName: "Arabian",
     img: "banner3.jpeg",
     story:
       "Include popular icons in your React projects easily with react-icons which utilizes ES6 imports that allows you to include only the icons that your project is using.",
   },
   {
     firstName: "Gyanendra",
-    lastName: "Kumar",
+    lastName: "Arabian",
     img: "banner4.jpeg",
     story:
       "Include popular icons in your React projects easily with react-icons which utilizes ES6 imports that allows you to include only the icons that your project is using.",
