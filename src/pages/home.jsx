@@ -183,13 +183,13 @@ export default function home() {
         </div>
       </Container>
       <Container className=" bg-[url(/rose.jpg)] bg-no-repeat bg-cover  story  text-white relative ">
-        <div className=" max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
+        <div className=" mx-auto  max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
           <h4 className="text-3xl md:text-4xl font-serif font-semibold">
             Your Story is waiting to happen
           </h4>
           <button
             type="button"
-            className=" font-serif bg-rose-800 border-2 rounded-lg px-6 py-2"
+            className=" font-serif bg-rose-500 border-2 rounded-lg px-6 py-2"
           >
             Get Started
           </button>
@@ -197,12 +197,12 @@ export default function home() {
       </Container>
 
       <Container>
-        <div className=" max-w-7xl px-2 md:px-8  py-2 ">
-          <div className="md:max-w-4xl mx-auto text-left md:text-center">
+        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-2 ">
+          <div className="mx-auto md:max-w-4xl  text-left md:text-center">
             <p className=" sm:hidden leading-tright text-sm text-gray-600 font-semibold  ">
               UPGRADE YOUR MEMBERSHIP PLAN
             </p>
-            <h4 className=" -mt-1  md:mt-0 text-left md:text-center leading-snug text-3xl  md:text-4xl font-bold tracking-tight">
+            <h4 className=" -mt-1 mb-3  md:mt-0 text-left md:text-center leading-snug text-3xl  md:text-4xl font-bold tracking-tight">
               Membership Plans
             </h4>
             <p>

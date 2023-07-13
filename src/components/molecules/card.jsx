@@ -9,10 +9,10 @@ export default function Card({firstName,lastName,img,story}) {
         <img
           alt="satu"
           width={500}
-          height={100}
-          className="w-full h-52 object-center object-cover"
+          height={500}
+          className="  w-full h-72 object-cover object-center "
          
-          src={img}
+          src= {img}
         />
         <div className=" p-4">
           <div className="text-lg   font-semibold ">
