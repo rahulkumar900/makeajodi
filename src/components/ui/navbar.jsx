@@ -4,7 +4,7 @@ import DropList from "../molecules/menu";
 
 function navbar() {
   return (
-    <div className="border-b ">
+    <div className="border-b bg-rose-900">
       <header className=" px-2 md:px-8 py-2 max-w-7xl mx-auto flex justify-between items-center ">
         <div>LOGO</div>
         <div className="flex items-center gap-8">
