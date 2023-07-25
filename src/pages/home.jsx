@@ -18,7 +18,7 @@ export default function home() {
         <div className="flex gap-8 items-center max-w-7xl mx-auto px-2 md:px-8  py-2">
           <div className="hidden md:block h-f w-1/2 flex-auto"></div>
           <div className=" w-full md:w-1/2 h-f    flex justify-end items-center ">
-            <form className="w-full space-y-4 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-rose-900 ">
+            <form className="w-full space-y-4 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-rose-900  ">
               <div className="w-full   px-3 mb-6 md:mb-0">
                 <label
                   className="block tracking-wide  text-base mb-2"
@@ -28,7 +28,7 @@ export default function home() {
                 </label>
                 <select
                   id="selectFor"
-                  className="w-full block  bg-rose-500 focus:bg-rose-500   border rounded py-3 px-4 mb-3 leading-tight focus:outline-none "
+                  className="w-full block  bg-rose-300 focus:bg-rose-500   border rounded py-3 px-4 mb-3 leading-tight focus:outline-none "
                 >
                   {profileFor
                     ? profileFor.map((ele, i) => {
@@ -74,7 +74,7 @@ export default function home() {
                   Name
                 </label>
                 <input
-                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-500 focus:bg-rose-500"
+                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500"
                   id="name"
                   type="text"
                 />
@@ -90,7 +90,7 @@ export default function home() {
                   Mobile Number
                 </label>
                 <input
-                  className="appearance-none block w-full  border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-500 focus:bg-rose-500 "
+                  className="appearance-none block w-full  border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500 "
                   id="mobile"
                   type="tele"
                 />
@@ -106,7 +106,7 @@ export default function home() {
                   Email Address
                 </label>
                 <input
-                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-500 focus:bg-rose-500 "
+                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500 "
                   id="email"
                   type="email"
                 />
@@ -116,7 +116,7 @@ export default function home() {
               </div>
 
               <div className="w-full  px-3 mb-6 md:mb-0">
-                <button className="py-3 px-4 rounded-md font-semibold text-gray-100 bg-rose-700 w-full  bg-green ">
+                <button className="py-3 px-4 rounded-md font-semibold text-gray-100 bg-rose-500 w-full  bg-green ">
                   Register Free
                 </button>
               </div>

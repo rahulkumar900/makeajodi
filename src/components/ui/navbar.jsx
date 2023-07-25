@@ -6,7 +6,9 @@ function navbar() {
   return (
     <div className="border-b bg-rose-900">
       <header className=" px-2 md:px-8 py-2 max-w-7xl mx-auto flex justify-between items-center ">
-        <div>LOGO</div>
+        <div>
+          <img src={"../../../makeajodisvg.svg"} width="150" height="auto" alt="logo" />
+        </div>
         <div className="flex items-center gap-8">
           <ul className="hidden md:flex gap-2 items-center">
             <li className="px-3 py-2">Home</li>
