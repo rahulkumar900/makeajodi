@@ -18,7 +18,7 @@ export default function home() {
         <div className="flex gap-8 items-center max-w-7xl mx-auto px-2 md:px-8  py-2">
           <div className="hidden md:block h-f w-1/2 flex-auto"></div>
           <div className=" w-full md:w-1/2 h-f    flex justify-end items-center ">
-            <form className="w-full space-y-4 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-rose-900  ">
+            <div className="w-full space-y-4 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-rose-900  ">
               <div className="w-full   px-3 mb-6 md:mb-0">
                 <label
                   className="block tracking-wide  text-base mb-2"
@@ -120,7 +120,7 @@ export default function home() {
                   Register Free
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@ export default function home() {
       </Container>
 
       <Container>
-        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-2 ">
+        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-2 " id="plans">
           <div className="mx-auto md:max-w-4xl  text-left md:text-center">
             <p className=" sm:hidden  leading-loose text-sm text-rose-100 font-semibold  ">
               UPGRADE YOUR MEMBERSHIP PLAN

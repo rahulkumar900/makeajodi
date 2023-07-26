@@ -26,7 +26,24 @@ function footer() {
         <div className="space-y-2 flex-auto">
           <h3 className="font-bold"> Follow us</h3>
           <ul>
-            <li>Facebook</li>
+            <li>
+              <a
+                href="https://www.facebook.com/makeajodi"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/makeajodi/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Facebook
+              </a>
+            </li>
             <li>Instagram</li>
             <li>Linkedin</li>
             <li>YouTube</li>

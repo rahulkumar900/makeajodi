@@ -4,22 +4,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const successStories = [
   {
-    firstName: "Kritic Pyush",
-    lastName: "Manisha",
+    firstName: " Bharat ",
+    lastName: "Bhrakh",
     img: "/banner1.jpeg",
     story:
       "Hello Team MakeAJodi, First of all, I want to thank the entire MakeAJodi team for making me meet my soulmate. We (Gyanendra & Rabina) both liked each other’s profile on MakeAJodi and that’s how our conversation started. We both got happily married on 27/11/2022. Credit goes to you guyz.",
   },
+  // {
+  //   firstName: "Kritic Pyush",
+  //   lastName: "Manisha",
+  //   img: "/banner2.jpeg",
+  //   story:
+  //     "I met  at makeajodi.com. The key think for our match was 'Desired partner' profile, which I described in details. Recommend everyone to describe in detail who you are and your expectation in detail, because there is someone who will honor it..",
+  // },
   {
-    firstName: "Kritic Pyush",
-    lastName: "Manisha",
-    img: "/banner2.jpeg",
-    story:
-      "I met  at makeajodi.com. The key think for our match was 'Desired partner' profile, which I described in details. Recommend everyone to describe in detail who you are and your expectation in detail, because there is someone who will honor it..",
-  },
-  {
-    firstName: "Randhir",
-    lastName: "Aditi Priya",
+    firstName: "Deepak",
+    lastName: "Nisha",
     img: "banner3.jpeg",
     story:
       "I found my soul mate through makeajodi.com Recently we have celebrated our 1st anniversary. Both the families are also happy and share special bond with each other. Thanks makeajodi.com personalized team.",
