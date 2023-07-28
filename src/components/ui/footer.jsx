@@ -1,5 +1,10 @@
 import { memo } from "react";
-
+import {
+  SlSocialInstagram,
+  SlSocialFacebook,
+  SlSocialTwitter,
+  SlSocialYoutube,
+} from "react-icons/sl";
 import Container from "../container-block/container-section";
 function footer() {
   return (
@@ -25,28 +30,27 @@ function footer() {
         </div>
         <div className="space-y-2 flex-auto">
           <h3 className="font-bold"> Follow us</h3>
-          <ul>
+          <ul className="flex gap-4 py-2">
             <li>
               <a
                 href="https://www.facebook.com/makeajodi"
                 rel="noreferrer"
                 target="_blank"
               >
-                Facebook
+                <SlSocialFacebook size={20} />
               </a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/makeajodi/"
-                rel="noreferrer"
                 target="_blank"
+                rel="noreferrer"
               >
-                Facebook
+                <SlSocialInstagram size={20} />
               </a>
             </li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-            <li>YouTube</li>
+            <SlSocialTwitter size={20} />
+            <SlSocialYoutube size={20} />
           </ul>
         </div>
         {/* <div className="space-y-2 flex-auto">

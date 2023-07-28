@@ -266,7 +266,7 @@ export default function home() {
                   </li>
                 </ul>
                 <button className="p-2 text-gray-100 bg-green-700 w-full">
-                  Register Free
+                 Register Free
                 </button>
               </div>
               <div className="w-full membership-card-premium h-min bg-rose-500 border p-6 space-y-6 max-w-none md:max-w-sm">
@@ -326,7 +326,7 @@ export default function home() {
                   </li>
                 </ul>
                 <button className="p-2 text-rose-500 font-medium bg-gray-100 w-full">
-                  Register Free
+                  Upgrade Now
                 </button>
               </div>
               <div className="w-full membership-card-Premium h-min bg-orange-600 border p-6 space-y-6 max-w-none md:max-w-sm">
@@ -394,7 +394,7 @@ export default function home() {
                   </li>
                 </ul>
                 <button className="p-2 text-rose-500 font-medium bg-gray-100 w-full">
-                  Register Free
+                  Upgrade Now
                 </button>
               </div>
             </div>
