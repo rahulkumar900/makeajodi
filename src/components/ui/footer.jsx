@@ -6,6 +6,7 @@ import {
   SlSocialYoutube,
 } from "react-icons/sl";
 import Container from "../container-block/container-section";
+import { Link } from "react-router-dom";
 function footer() {
   return (
     <Container className="bg-rose-500 text-white pb-16">
@@ -16,6 +17,9 @@ function footer() {
             <li>Home</li>
             <li>About us</li>
             <li>Subscription Plan</li>
+            <li>
+              <Link to={"/privacy-policy"}>Privacy Policy</Link>
+            </li>
             <li>Success Stories</li>
           </ul>
         </div>

@@ -218,7 +218,7 @@ export default function home() {
           </div>
           <div className="mt-12">
             <div className="flex gap-8 md:gap-1 flex-col md:flex-row  w-full justify-center items-center ">
-              <div className="w-full membership-card-free  bg-rose-800 border h-min p-6 space-y-6 max-w-none md:max-w-sm">
+              {/* <div className="w-full membership-card-free  bg-rose-800 border h-min p-6 space-y-6 max-w-none md:max-w-sm">
                 <div className="space-y-2">
                   <div className="w-10 h-1 bg-green-500"></div>
                   <div className="text-3xl  font-bold">Free</div>
@@ -268,7 +268,7 @@ export default function home() {
                 <button className="p-2 text-gray-100 bg-green-700 w-full">
                  Register Free
                 </button>
-              </div>
+                  </div> */}
               <div className="w-full membership-card-premium h-min bg-rose-500 border p-6 space-y-6 max-w-none md:max-w-sm">
                 <div className="space-y-2">
                   <div className="w-10 h-1 bg-gray-200"></div>
