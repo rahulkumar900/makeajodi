@@ -8,8 +8,9 @@ function navbar() {
       <header className=" px-2 md:px-8 py-4 max-w-7xl mx-auto flex justify-between items-center ">
         <Link to={"/"}>
           <img
-            src={"../../../makeajodisvg.svg"}
-            width="150"
+            // src={"../../../makeajodisvg.svg"}
+            src={"../../../makeajodi1.png"}
+            width="350"
             height="auto"
             alt="logo"
           />
