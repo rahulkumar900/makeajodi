@@ -7,14 +7,14 @@ function navbar() {
     <div className="border-b bg-rose-900 sticky top-0 z-50">
       <header className=" px-2 md:px-8 py-4 max-w-7xl mx-auto flex justify-between items-center ">
         <Link to={"/"}>
-          {
-            // <img
-            // src={"../../../makeajodi1.png"}
-            // width="350"
-            // height="auto"
-            // alt="logo"
-            // />
-          }
+          
+            <img
+            src={"../../../makeajodi1.png"}
+            width="350"
+            height="auto"
+            alt="logo"
+            />
+          
         </Link>
         <div className="flex items-center gap-8">
           <ul className="hidden md:flex gap-2 items-center">
