@@ -13,29 +13,35 @@ const profileFor = [
 ];
 export default function home() {
   return (
-    <>
-      <div className="home-container bg-gray-100  ">
+    <div className=" snap-mandatory snap-y">
+      <div className="home-container bg-gray-100  " id="hero">
         <div className="flex gap-8 items-center max-w-7xl mx-auto px-2 md:px-8  py-2">
           <div className="hidden md:block h-f w-1/2 flex-auto"></div>
           <div className=" w-full md:w-1/2 h-f    flex justify-end items-center ">
-            <form className="w-full space-y-6 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-white ">
-              <div className="w-full  px-3 mb-6 md:mb-0">
+            <div className="w-full space-y-4 px-6 py-10  shadow-sm h-min  max-w-lg border rounded-lg  bg-rose-900  ">
+              <div className="w-full   px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide  text-base mb-2"
                   htmlFor="selectFor"
                 >
                   Create Profile For
                 </label>
                 <select
                   id="selectFor"
-                  className="w-full block   text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="w-full block  bg-rose-300 focus:bg-rose-500   border rounded py-3 px-4 mb-3 leading-tight focus:outline-none "
                 >
                   {profileFor
                     ? profileFor.map((ele, i) => {
                         return (
-                          <option key={i} className="py-3 px-4" value={ele}>
-                            {ele}
-                          </option>
+                          <>
+                            <option
+                              key={i}
+                              className="py-3 px-4 bg-rose-950"
+                              value={ele}
+                            >
+                              {ele}
+                            </option>
+                          </>
                         );
                       })
                     : "Null"}
@@ -62,13 +68,13 @@ export default function home() {
               </div>
               <div className="w-full  px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide  text-base  mb-2"
                   htmlFor="name"
                 >
                   Name
                 </label>
                 <input
-                  className="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500"
                   id="name"
                   type="text"
                 />
@@ -78,13 +84,13 @@ export default function home() {
               </div>
               <div className="w-full  px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-base mb-2"
                   htmlFor="mobile"
                 >
                   Mobile Number
                 </label>
                 <input
-                  className="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full  border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500 "
                   id="mobile"
                   type="tele"
                 />
@@ -94,13 +100,13 @@ export default function home() {
               </div>
               <div className="w-full  px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide  text-base  mb-2"
                   htmlFor="email"
                 >
                   Email Address
                 </label>
                 <input
-                  className="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full   border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-rose-300 focus:bg-rose-500 "
                   id="email"
                   type="email"
                 />
@@ -114,7 +120,7 @@ export default function home() {
                   Register Free
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -123,8 +129,8 @@ export default function home() {
           Find Your Special One
         </h2>
         <div className="grid gap-4 grid-cols-12 w-full mt-12 max-w-7xl px-2 md:px-8  py-2   mx-auto">
-          <div className="bg-white border-b-8  border-4 border-black rounded-3xl  col-span-full md:col-span-4 text-center   shadow p-10 space-y-2">
-            <div className="border  w-min  rounded-full p-6 mx-auto">
+          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center   shadow p-10 space-y-2">
+            <div className=" w-min border  rounded-full p-6 mx-auto">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +144,7 @@ export default function home() {
             <h3 className="text-2xl font-semibold text-center">SignUp</h3>
             <p>Register for free & Put your Matrimony Profile</p>
           </div>
-          <div className="bg-white border-b-8  border-4 border-black rounded-3xl col-span-full md:col-span-4 text-center    shadow p-10 space-y-2">
+          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center    shadow p-10 space-y-2">
             <div className=" w-min border rounded-full p-6 mx-auto">
               <div>
                 <svg className="w-16 h-16" viewBox="0 0 100.4 100.4">
@@ -149,7 +155,7 @@ export default function home() {
             <h3 className="text-2xl font-semibold text-center">Connect</h3>
             <p>Select and Connect with Your Compatible matches</p>
           </div>
-          <div className="bg-white border-b-8  border-4 border-black rounded-3xl col-span-full md:col-span-4 text-center  shadow p-10 space-y-2">
+          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center  shadow p-10 space-y-2">
             <div className=" w-min border rounded-full p-6 mx-auto">
               <div>
                 <svg
@@ -172,7 +178,7 @@ export default function home() {
       <Container>
         <div className=" max-w-7xl mx-auto px-2 md:px-8  py-2 ">
           <h2 className="font-bold text-3xl  md:text-4xl">
-            Success Stories of MakeaJodi
+            Success Stories of MakeAJodi
           </h2>
           <div className=" w-full mt-12 ">
             <SwiperCard />
@@ -180,26 +186,28 @@ export default function home() {
         </div>
       </Container>
       <Container className=" bg-[url(/rose.jpg)] bg-no-repeat bg-cover  story  text-white relative ">
-        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
+        <div className=" mx-auto  max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
           <h4 className="text-3xl md:text-4xl font-serif font-semibold">
             Your Story is waiting to happen
           </h4>
-          <button
+          <a
+            href="#hero"
             type="button"
-            className=" font-serif hover:bg-rose-600 border px-6 py-2"
+            role="button"
+            className=" font-serif bg-rose-500 border-2 rounded-lg px-6 py-2"
           >
             Get Started
-          </button>
+          </a>
         </div>
       </Container>
 
       <Container>
-        <div className=" max-w-7xl mx-auto px-2 md:px-8  py-2 ">
-          <div className="md:max-w-4xl mx-auto text-left md:text-center">
-            <p className=" sm:hidden leading-tright text-sm text-gray-600 font-semibold  ">
+        <div className=" mx-auto max-w-7xl px-2 md:px-8  py-2 " id="plans">
+          <div className="mx-auto md:max-w-4xl  text-left md:text-center">
+            <p className=" sm:hidden  leading-loose text-sm text-rose-100 font-semibold  ">
               UPGRADE YOUR MEMBERSHIP PLAN
             </p>
-            <h4 className=" -mt-1  md:mt-0 text-left md:text-center leading-snug text-3xl  md:text-4xl font-bold tracking-tight">
+            <h4 className=" -mt-1 mb-3  md:mt-0 text-left md:text-center leading-snug text-3xl  md:text-4xl font-bold tracking-tight">
               Membership Plans
             </h4>
             <p>
@@ -209,8 +217,8 @@ export default function home() {
             </p>
           </div>
           <div className="mt-12">
-            <div className="flex gap-8 md:gap-0 flex-col md:flex-row w-full justify-center items-center ">
-              <div className="w-full membership-card-free border h-min p-6 space-y-6 max-w-none md:max-w-sm">
+            <div className="flex gap-8 md:gap-1 flex-col md:flex-row  w-full justify-center items-center ">
+              {/* <div className="w-full membership-card-free  bg-rose-800 border h-min p-6 space-y-6 max-w-none md:max-w-sm">
                 <div className="space-y-2">
                   <div className="w-10 h-1 bg-green-500"></div>
                   <div className="text-3xl  font-bold">Free</div>
@@ -233,34 +241,34 @@ export default function home() {
                     </p>
                   </li>
                   <li className="inline-flex items-center gap-2">
-                    <RxCrossCircled size={25} className="text-gray-500" />
-                    <p className="text-md text-gray-500 font-normal">
+                    <RxCrossCircled size={25} className="text-rose-300" />
+                    <p className="text-md text-rose-300 font-normal">
                       Get up to 3x more matches daily
                     </p>
                   </li>
                   <li className="inline-flex items-center gap-2">
-                    <RxCrossCircled size={25} className="text-gray-500" />
-                    <p className="text-md text-gray-500 font-normal">
+                    <RxCrossCircled size={25} className="text-rose-300" />
+                    <p className="text-md text-rose-300 font-normal">
                       Unlock access to advanced search
                     </p>
                   </li>
                   <li className="inline-flex items-center gap-2">
-                    <RxCrossCircled size={25} className="text-gray-500" />
-                    <p className="text-md text-gray-500  font-normal">
+                    <RxCrossCircled size={25} className="text-rose-300" />
+                    <p className="text-md text-rose-300  font-normal">
                       View contact details
                     </p>
                   </li>
                   <li className="inline-flex items-center gap-2">
-                    <RxCrossCircled size={25} className="text-gray-500" />
-                    <p className="text-md text-gray-500   font-normal">
+                    <RxCrossCircled size={25} className="text-rose-300" />
+                    <p className="text-md text-rose-300   font-normal">
                       Make unlimited voice and video calls
                     </p>
                   </li>
                 </ul>
                 <button className="p-2 text-gray-100 bg-green-700 w-full">
-                  Register Free
+                 Register Free
                 </button>
-              </div>
+                  </div> */}
               <div className="w-full membership-card-premium h-min bg-rose-500 border p-6 space-y-6 max-w-none md:max-w-sm">
                 <div className="space-y-2">
                   <div className="w-10 h-1 bg-gray-200"></div>
@@ -318,7 +326,7 @@ export default function home() {
                   </li>
                 </ul>
                 <button className="p-2 text-rose-500 font-medium bg-gray-100 w-full">
-                  Register Free
+                  Upgrade Now
                 </button>
               </div>
               <div className="w-full membership-card-Premium h-min bg-orange-600 border p-6 space-y-6 max-w-none md:max-w-sm">
@@ -386,13 +394,13 @@ export default function home() {
                   </li>
                 </ul>
                 <button className="p-2 text-rose-500 font-medium bg-gray-100 w-full">
-                  Register Free
+                  Upgrade Now
                 </button>
               </div>
             </div>
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 }

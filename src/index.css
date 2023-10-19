@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
+
 .swiper-button-next {
   background-image: url(/next.svg);
   background-repeat: no-repeat;
@@ -34,8 +38,6 @@
   display: none;
 }
 
-.story{
-  
- background-blend-mode:darken
-  
+.story {
+  background-blend-mode: darken;
 }
