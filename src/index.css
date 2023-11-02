@@ -6,6 +6,12 @@ html {
   @apply scroll-smooth;
 }
 
+
+.hero{
+  height: calc(100vh + 10rem);
+  width: 100%;
+}
+
 .swiper-button-next {
   background-image: url(/next.svg);
   background-repeat: no-repeat;

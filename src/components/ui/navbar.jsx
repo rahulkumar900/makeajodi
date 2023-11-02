@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function navbar() {
   return (
-    <div className="border-b bg-gradient-to-r from-red-500 to-orange-500  sticky top-0 z-50">
+    <div className=" bg-gradient-to-r from-red-500 to-orange-500  sticky top-0 z-50">
       <header className=" px-2 md:px-8 py-4 max-w-7xl mx-auto flex justify-between items-center ">
         <Link to={"/"}>
           <img
