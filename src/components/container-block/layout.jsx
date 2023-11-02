@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export default function layout() {
   return (
-    <div className="bg-rose-700 text-white">
+    <div className="">
       <Navbar />
       <div className="main">
         <Outlet />
