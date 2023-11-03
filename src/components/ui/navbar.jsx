@@ -15,7 +15,7 @@ function navbar() {
           />
         </Link>
         <div className="flex items-center gap-8">
-          <ul className="hidden md:flex gap-2 items-center text-gray-100 font-medium">
+          <ul className="hidden md:flex gap-4 items-center text-gray-100 font-medium">
             <li className="px-3 py-2">Home</li>
             <li className="px-3 py-2">About</li>
             <li className="px-3 py-2">

@@ -8,12 +8,12 @@ export default function home() {
   return (
     <div className=" snap-mandatory snap-y">
       <Hero />
-      <Container>
+      <Container className="py-4 md:py-0 ">
         <h2 className="text-center text-3xl md:text-4xl font-bold tracking-tight">
           Find Your Special One
         </h2>
-        <div className="grid gap-4 grid-cols-12 w-full mt-12 max-w-7xl px-2 md:px-8  py-2   mx-auto">
-          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center   shadow p-10 space-y-2">
+        <div className="grid gap-4 grid-cols-12 w-full mt-8 max-w-7xl px-2 md:px-8  py-2   mx-auto">
+          <div className="shadow-lg border rounded-md  col-span-full md:col-span-4 text-center  p-10 space-y-2">
             <div className=" w-min border  rounded-full p-6 mx-auto">
               <div>
                 <svg
@@ -28,7 +28,7 @@ export default function home() {
             <h3 className="text-2xl font-semibold text-center">SignUp</h3>
             <p>Register for free & Put your Matrimony Profile</p>
           </div>
-          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center    shadow p-10 space-y-2">
+          <div className="shadow-lg border rounded-md  col-span-full md:col-span-4 text-center  p-10 space-y-2">
             <div className=" w-min border rounded-full p-6 mx-auto">
               <div>
                 <svg className="w-16 h-16" viewBox="0 0 100.4 100.4">
@@ -39,7 +39,7 @@ export default function home() {
             <h3 className="text-2xl font-semibold text-center">Connect</h3>
             <p>Select and Connect with Your Compatible matches</p>
           </div>
-          <div className="border-b-4 bg-rose-600  border border-rose-200 rounded-xl  col-span-full md:col-span-4 text-center  shadow p-10 space-y-2">
+          <div className="shadow-lg border rounded-md  col-span-full md:col-span-4 text-center  p-10 space-y-2">
             <div className=" w-min border rounded-full p-6 mx-auto">
               <div>
                 <svg
@@ -64,7 +64,7 @@ export default function home() {
           <h2 className="font-bold text-3xl  md:text-4xl">
             Success Stories of MakeAJodi
           </h2>
-          <div className=" w-full mt-12 ">
+          <div className=" w-full mt-8 ">
             <SwiperCard />
           </div>
         </div>

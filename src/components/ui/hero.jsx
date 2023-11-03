@@ -11,10 +11,10 @@ const profileFor = [
 ];
 export default function Hero() {
   return (
-    <Container className="relative flex px-0 pt-0  w-full hero bg-gradient-to-r from-red-500 to-orange-500 ">
+    <Container className="relative flex px-0 pt-0   w-full md:h-[calc(100vh_-_6rem)] lg:h-[calc(100vh_+_7rem)] bg-gradient-to-r from-red-500 to-orange-500 ">
       <section className="px-2 md:px-8 py-8 max-w-7xl flex-shrink-0 flex-1  mx-auto flex justify-between items-start   ">
-        <div className="hidden md:block h-full  w-1/2 flex-1 px-14">
-          <img src="./wireframe.png" alt="das" className=" h-auto" />
+        <div className="hidden md:block h-full  w-1/2 flex-1 items-center  md:pr-10">
+          <img src="./wireframe1.png" alt="das" className=" h-auto" />
         </div>
         <div className=" w-full md:w-1/2  h-full flex justify-end    ">
           <div className="w-full space-y-4 p-10  shadow-sm h-min  max-w-lg  rounded-lg  bg-white  bg-opacity-10 ">

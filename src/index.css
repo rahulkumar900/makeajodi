@@ -6,9 +6,8 @@ html {
   @apply scroll-smooth;
 }
 
-
-.hero{
-  height: calc(100vh + 10rem);
+.hero {
+  height: calc(100vh + 7rem);
   width: 100%;
 }
 
