@@ -69,16 +69,17 @@ export default function home() {
           </div>
         </div>
       </Container>
-      <Container className=" bg-[url(/rose.jpg)] bg-no-repeat bg-cover  story  text-white relative ">
-        <div className=" mx-auto  max-w-7xl px-2 md:px-8  py-8 text-center space-y-6  ">
-          <h4 className="text-3xl md:text-4xl font-serif font-semibold">
+      <Container className="  bg-no-repeat bg-cover  story  text-white relative ">
+        <div className="absolute inset-0 w-full h-full  bg-gradient-to-r from-red-500 to-orange-500 opacity-80 -z-1 "></div>
+        <div className=" mx-auto  max-w-7xl px-2 md:px-8  py-16 text-center space-y-10 ">
+          <h4 className="text-3xl relative text-white md:text-5xl font-serif font-semibold">
             Your Story is waiting to happen
           </h4>
           <a
             href="#hero"
             type="button"
             role="button"
-            className=" font-serif bg-rose-500 border-2 rounded-lg px-6 py-2"
+            className=" relative text-orange-500 font-serif bg-white border-2 rounded-lg px-6 py-2"
           >
             Get Started
           </a>

@@ -11,8 +11,8 @@ const profileFor = [
 ];
 export default function Hero() {
   return (
-    <Container className="relative flex px-0 pt-0   w-full md:h-[calc(100vh_-_6rem)] lg:h-[calc(100vh_+_7rem)] bg-gradient-to-r from-red-500 to-orange-500 ">
-      <section className="px-2 md:px-8 py-8 max-w-7xl flex-shrink-0 flex-1  mx-auto flex justify-between items-start   ">
+    <Container className="relative flex px-0 pt-0   w-full h-[calc(100vh_-_4rem)] lg:h-[calc(100vh_+_7rem)] bg-gradient-to-r from-red-500 to-orange-500 ">
+      <section className="px-2  py-8 max-w-7xl flex-shrink-0 flex-1  mx-auto flex justify-between items-start   ">
         <div className="hidden md:block h-full  w-1/2 flex-1 items-center  md:pr-10">
           <img src="./wireframe1.png" alt="das" className=" h-auto" />
         </div>
@@ -127,10 +127,30 @@ export default function Hero() {
       >
         <path
           fill="#ffffff"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,160L120,133.3C240,107,480,53,720,53.3C960,53,1200,107,1320,133.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
+
+      <div className="absolute left-0 right-0 bottom-0  w-full h-16 z-30">
+        <div className="relative w-full h-full ">
+          <svg
+            className="  fill-orange-500 hidden md:block  border  w-10 h-10  animate-bounce absolute left-1/2 transform -translate-x-1/2 rounded-full shadow-md  "
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
+            <g className="bg-gradient-to-r from-red-500 to-orange-500">
+              <path
+                d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+       c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+       c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
     </Container>
   );
 }

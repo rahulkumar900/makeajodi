@@ -10,7 +10,7 @@ export default function Card({ firstName, lastName, img, story }) {
             alt="satu"
             width={500}
             height={500}
-            className=" bg-white w-full h-72 object-cover object-center "
+            className="filter  saturate-10 w-full h-72 object-cover object-center "
             src={img}
           />
           <div className=" p-4">
