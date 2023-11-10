@@ -4,17 +4,17 @@ const profileFor = [
   "MySelf",
   "Brother",
   "Sister",
-  "Daoghter",
+  "Daughter",
   "Son",
   "Relative",
   "Friend",
 ];
 export default function Hero() {
   return (
-    <Container className="relative flex px-0 pt-0   w-full h-[calc(100vh_-_4rem)] lg:h-[calc(100vh_+_7rem)] bg-gradient-to-r from-red-500 to-orange-500 ">
-      <section className="px-2  py-8 max-w-7xl flex-shrink-0 flex-1  mx-auto flex justify-between items-start   ">
-        <div className="hidden md:block h-full  w-1/2 flex-1 items-center  md:pr-10">
-          <img src="./wireframe1.png" alt="das" className=" h-auto" />
+    <Container className="relative flex px-0 pt-0 z-0   w-full h-[calc(100vh_-_4rem)] lg:h-[calc(100vh_+_7rem)] bg-gradient-to-r from-red-500 to-orange-500 ">
+      <section className="px-2 relative  py-8 max-w-7xl flex-shrink-0 flex-1  mx-auto flex justify-between items-start   ">
+        <div className="hidden md:block relative h-full   w-1/2 flex-1 items-center   md:pr-10">
+          <img src="./couple-bg.png" alt="das" className=" h-auto" />
         </div>
         <div className=" w-full md:w-1/2  h-full flex justify-end    ">
           <div className="w-full space-y-4 p-10  shadow-sm h-min  max-w-lg  rounded-lg  bg-white  bg-opacity-10 ">
@@ -31,33 +31,16 @@ export default function Hero() {
               >
                 {profileFor
                   ? profileFor.map((ele, i) => {
-                      return (
-                        <>
-                          <option key={i} className="py-3 px-4 " value={ele}>
-                            {ele}
-                          </option>
-                        </>
-                      );
-                    })
+                    return (
+                      <>
+                        <option key={i} className="py-3 px-4 " value={ele}>
+                          {ele}
+                        </option>
+                      </>
+                    );
+                  })
                   : "Null"}
-                <option className="py-3 px-4" value="">
-                  Brother
-                </option>
-                <option className="py-3 px-4" value="">
-                  Self
-                </option>
-                <option className="py-3 px-4" value="">
-                  Self
-                </option>
-                <option className="py-3 px-4" value="">
-                  Self
-                </option>
-                <option className="py-3 px-4" value="">
-                  Self
-                </option>
-                <option className="py-3 px-4" value="">
-                  Self
-                </option>
+
               </select>
             </div>
             <div className="w-full  md:mb-0 ">

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html {
   @apply scroll-smooth;
 }
@@ -12,7 +14,11 @@ html {
 }
 
 .swiper-button-next {
-  background-image: url(/next.svg);
+  background-image: url(/next.svg), linear-gradient(50deg, rgba(249,115,22,1) 50%, rgba(208,14,47,1) 100%) ;
+  width: 25px !important;
+  height: 25px !important;
+  border: 1px solid white;
+  border-radius: 50% !important;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -26,7 +32,12 @@ html {
 }
 
 .swiper-button-prev {
-  background-image: url(/prev.svg);
+
+  background-image: url(/prev.svg), linear-gradient(50deg, rgba(249,115,22,1) 50%, rgba(208,14,47,1) 100%) ;
+ border: 1px solid white;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50% !important;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;

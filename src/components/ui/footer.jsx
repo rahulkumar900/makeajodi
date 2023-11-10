@@ -9,10 +9,11 @@ import Container from "../container-block/container-section";
 import { Link } from "react-router-dom";
 function footer() {
   return (
-    <Container className="bg-rose-500 text-white pb-16">
-      <div className=" flex-wrap gap-8 flex max-w-7xl mx-auto py-2 px-2 md:px-8 ">
+    <Container className="bg-gradient-to-r relative from-red-500 to-orange-500 text-white pb-16">
+     <div></div>
+      <div className=" mt-10 md:mt-28 flex-wrap gap-8 flex max-w-7xl mx-auto py-2 px-2 md:px-8 ">
         <div className="space-y-2 flex-auto">
-          <h3 className=" font-bold">Explore</h3>
+          <h3 className=" text-white font-bold">Explore</h3>
           <ul>
             <li>Home</li>
             <li>About us</li>
@@ -67,6 +68,7 @@ function footer() {
           </ul>
         </div> */}
       </div>
+      <svg className="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L120,53.3C240,75,480,117,720,117.3C960,117,1200,75,1320,53.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
     </Container>
   );
 }
